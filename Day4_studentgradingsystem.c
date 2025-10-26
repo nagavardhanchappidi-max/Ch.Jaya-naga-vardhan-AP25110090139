@@ -1,4 +1,4 @@
-#include <stdio.h>
+;#include <stdio.h>
 
 int main() {
     float mp, atd;
@@ -7,8 +7,8 @@ int main() {
     int sub1,sub2,sub3,sub4,sub5;
 
     printf("Enter the Marks of 5 subject markes ");
-    scanf("%d%d%d%d%d",&sub1,&sub2,&sub3,&sub4,&sub5)
-    mp=(sub1+sub2+sub3+sub4+sub5/500)*100
+    scanf("%d%d%d%d%d",&sub1,&sub2,&sub3,&sub4,&sub5);
+    mp=(sub1+sub2+sub3+sub4+sub5)/5;
     printf("Enter the Attendance percentage: ");
     scanf("%f", &atd);
 
