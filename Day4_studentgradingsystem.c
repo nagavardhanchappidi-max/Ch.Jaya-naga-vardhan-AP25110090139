@@ -4,15 +4,11 @@ int main() {
     float mp, atd;
     char grade[3];     
     char remarks[20];
-    int a1,a2,a3,a4,a5;
+    int sub1,sub2,sub3,sub4,sub5;
 
     printf("Enter the Marks of 5 subject markes ");
-    scanf("%d%d%d%d%d",&a1,&a2,&a3,&a4,&a5);
-    if(a1>100 || a2>100 || a3>100 || a4>100 || a5>100)
-    {
-        printf("---- invalid input---");
-    }
-    mp=(a1+a2+a3+a4+a5)/5;
+    scanf("%d%d%d%d%d",&sub1,&sub2,&sub3,&sub4,&sub5)
+    mp=(sub1+sub2+sub3+sub4+sub5/500)*100
     printf("Enter the Attendance percentage: ");
     scanf("%f", &atd);
 
@@ -50,12 +46,10 @@ int main() {
     }
 
     // Final Output
-    printf("\n=============================\n");
     printf("Marks Percentage   : %.2f\n", mp);
     printf("Attendance          : %.2f\n", atd);
     printf("Grade               : %s\n", grade);
     printf("Remarks             : %s\n", remarks);
-    printf("=============================\n");
 
     return 0;
 }
