@@ -6,9 +6,9 @@ int main()
     char plan;
     printf("Enter the data used (in GB): ");
     scanf("%d", &dataused);
-    printf("are you student(1 for yes/0 for no): ");
+    printf("Enter the student status(1 for yes/0 for no): ");
     scanf("%d", &student);
-    printf("are you coperate employee(1 for yes/0 for no): ");
+    printf("Enter the coperate status(1 for yes/0 for no): ");
     scanf("%d", &coperate);
    
     if (dataused>100)
@@ -38,6 +38,7 @@ int main()
     }
         
     finalbill=base_cost+extra_cost;
+//-----Student discount-----
     if(student==1)
     {
         discount=finalbill*0.15;// student discount 15%
@@ -57,4 +58,5 @@ int main()
     printf("Discount applied IN rupees : %f\n", discount);
     printf("Final bill: %f\n", finalbill);
     return 0;
+
 }
